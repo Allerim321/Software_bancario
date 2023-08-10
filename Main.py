@@ -1,1 +1,3 @@
-from Classes import *
+from Algoritmo import *
+
+main()
