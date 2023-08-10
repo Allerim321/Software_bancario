@@ -11,15 +11,15 @@ def main():
             print("[5] - Realizar depósito")
             print("[6] - Sair")
 
-            op = int(input("Digite o numero equivalente a opção que deseja: "))
+            op = int(input("Digite o número equivalente à opção que deseja:\n"))
 
             if op == 1:
-                print("Você escolheu a opção 1")
+                print("")
             elif op == 2:
-                print("Você escolheu a opção 2")
+                print("")
             elif op == 3:
-                print("Você escolheu a opção 3")
-            elif op == 4: 
+                print("")
+            elif op == 6: 
                 print("Saindo...")
                 os.system("pause")
                 exit()
