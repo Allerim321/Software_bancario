@@ -4,10 +4,12 @@ def main():
     while True:
         try:
             print("Bem Vindo ao PazBank")
-            print("[1] - ")
-            print("[2] - ")
-            print("[3] - ")
-            print("[4] - Sair")
+            print("[1] - Cadastrar cliente")
+            print("[2] - Excluir cliente")
+            print("[3] - Alterar cliente")
+            print("[4] - Realizar saque")
+            print("[5] - Realizar depósito")
+            print("[6] - Sair")
 
             op = int(input("Digite o numero equivalente a opção que deseja: "))
 
