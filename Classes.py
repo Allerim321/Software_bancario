@@ -4,3 +4,4 @@ class Cliente:
         self.nome=nome
         self.cpf=cpf
         self.idade=idade
+        self.saldo=saldo
