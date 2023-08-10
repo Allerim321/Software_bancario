@@ -1,4 +1,7 @@
 class Cliente:
 
-    def __init__(self, sacar, depositar, transferencia):
-        self
+    def __init__(self, nome, cpf, idade):
+        self.nome=nome
+        self.cpf=cpf
+        self.idade=idade
+        

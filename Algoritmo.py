@@ -19,6 +19,10 @@ def main():
                 print("")
             elif op == 3:
                 print("")
+            elif op == 4:
+                print("")
+            elif op == 5:
+                print("")
             elif op == 6: 
                 print("Saindo...")
                 os.system("pause")
