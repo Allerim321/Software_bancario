@@ -30,5 +30,5 @@ def main():
             else:
                 print("Essa opção não consta na lista.")
         except Exception as erro:
-            print("Algo deu errado")
+            print("Algo deu errado. Tente novamente.")
             print(erro.__class__.__name__)
