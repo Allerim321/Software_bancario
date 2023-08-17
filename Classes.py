@@ -18,13 +18,13 @@ class Cliente:
         self.saldo += valor
         print("Valor depositado com sucesso! Seu saldo agora é de R$", self.saldo)
 
-    def transferencia(self, n1, n2, valor):
-        self.n11=input("Defina o número da conta de quem irá transferir.\n-")
-        self.n2=input("Defina o número da conta de quem irá receber.\n-")
+    def transferencia(self, cpf1, cpf2, valor):
+        self.cpf1=input("Defina o cpf de quem irá transferir.\n-")
+        self.cpf2=input("Defina o cpf de quem irá receber.\n-")
         self.valor=input("Defina o valor a ser transferido.\n-")
-        n1.saldo=self.saldo - valor
-        n2.saldo=self.saldo + valor
-        return n1.saldo, n2.saldo
+        cpf1.saldo=self.saldo - valor
+        cpf2.saldo=self.saldo + valor
+        return cpf1.saldo, cpf2.saldo
 
 class Banco:
 
