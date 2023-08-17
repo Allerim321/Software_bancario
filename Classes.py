@@ -12,3 +12,7 @@ class Cliente:
         else:
             self.saldo = self.saldo - valor
             print("Valor sacado com sucesso! Seu saldo agora é de R$",self.saldo)
+
+    def depositar(self,valor):
+            self.saldo = self.saldo + valor
+            print("Valor depositado com sucesso! Seu saldo agora é de R$",self.saldo)
