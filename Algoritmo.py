@@ -1,9 +1,19 @@
 import os
+import random
+from Classes import *
+
+
+banco = Banco()
+
 
 def def_cadastro():
     x = 1
     while x == 1:
         os.system("cls")
+        Banco.adicionar_conta=(input("Digite o nome do cliente\n-"),
+        input("Digite o CPF do cliente\n-"),
+        input("Digite a idade do cliente\n-"),
+        print(f"O número da conta é", random.randint(1000, 9999)))
         os.system("pause")
         x = 2
 
@@ -39,6 +49,7 @@ def def_transferencia():
     x = 1
     while x == 1:
         os.system("cls")
+
         os.system("pause")
         x = 2
 
@@ -58,23 +69,22 @@ def main():
             op = int(input("Digite o número equivalente à opção que deseja:\n"))
             match op:
                 case 1:
-                    print("")
+                    def_cadastro()
                 case 2:
-                    print("")
+                    def_excluir()
                 case 3:
-                    print("")
+                    def_alterar()
                 case 4:
-                    print("")
+                    def_saque()
                 case 5:
-                    print("")
+                    def_deposito()
                 case 6:
-                    print("")
+                    def_transferencia()
                 case 7: 
                     print("Saindo...")
                     os.system("pause")
                     exit()
                 case _:
                     print("Essa opção não consta na lista.")
-        except Exception as erro:
-            print("Algo deu errado. Tente novamente.")
-            print(erro.__class__.__name__)
+        except Exception:
+            print("Algo deu errado. Tente novamente.\n")
