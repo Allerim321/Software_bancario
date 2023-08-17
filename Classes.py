@@ -32,7 +32,23 @@ class Banco:
     def setNome(self,x):
         self.nome = x
         
+    def getIdade(self):
+        return self.idade
+    
+    def setIdade(self,x):
+        self.idade = x
 
+    def getCpf(self):
+        return self.cpf
+    
+    def setCpf(self,x):
+        self.cpf = x
+        
+    def getSaldo(self):
+        return self.saldo
+    
+    def setSaldo(self,x):
+        self.saldo = x
 
 
 clientes = []
