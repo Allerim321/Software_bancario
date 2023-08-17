@@ -22,6 +22,9 @@ def def_excluir():
     x = 1
     while x == 1:
         os.system("cls")
+        banco.excluir(x)
+        input("Digite o número da conta a ser excluído.\n")
+        print ("Excluído. Lista:\n", clientes)
         os.system("pause")
         x = 2
 
