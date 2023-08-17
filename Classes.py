@@ -28,6 +28,9 @@ class Banco:
         cliente = self.num_conta, self.nome, self.idade, self.cpf, self.saldo
         clientes.append(cliente)
 
+    def getConta(self):
+        return self.num_conta
+   
     def getNome(self):
         return self.nome
     
