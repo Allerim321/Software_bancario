@@ -58,17 +58,17 @@ def main():
             op = int(input("Digite o número equivalente à opção que deseja:\n"))
             match op:
                 case 1:
-                    print("")
+                    def_cadastro()
                 case 2:
-                    print("")
+                    def_excluir()
                 case 3:
-                    print("")
+                    def_alterar()
                 case 4:
-                    print("")
+                    def_saque()
                 case 5:
-                    print("")
+                    def_deposito()
                 case 6:
-                    print("")
+                    def_transferencia()
                 case 7: 
                     print("Saindo...")
                     os.system("pause")
