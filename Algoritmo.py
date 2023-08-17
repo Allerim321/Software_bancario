@@ -1,5 +1,47 @@
 import os
 
+def def_cadastro():
+    x = 1
+    while x == 1:
+        os.system("cls")
+        os.system("pause")
+        x = 2
+
+def def_excluir():
+    x = 1
+    while x == 1:
+        os.system("cls")
+        os.system("pause")
+        x = 2
+
+def def_alterar():
+    x = 1
+    while x == 1:
+        os.system("cls")
+        os.system("pause")
+        x = 2
+
+def def_saque():
+    x = 1
+    while x == 1:
+        os.system("cls")
+        os.system("pause")
+        x = 2
+
+def def_deposito():
+    x = 1
+    while x == 1:
+        os.system("cls")
+        os.system("pause")
+        x = 2
+    
+def def_transferencia():
+    x = 1
+    while x == 1:
+        os.system("cls")
+        os.system("pause")
+        x = 2
+
 def main():
     while True:
         try:
