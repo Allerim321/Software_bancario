@@ -1,3 +1,4 @@
+import random
 class Cliente:
 
     def __init__(self, nome, num_conta,saldo):
@@ -24,10 +25,12 @@ class Cliente:
 
 class Banco:
 
-    def adicionar_conta(self, nome, cpf, idade, num_conta):
-        conta = nome, cpf, idade, num_conta
-        self.contas.append(conta)
+    def adicionar_conta():
+        num_conta = random.randint(1000,9999)
+        nome = ""
+        idade = 0
+        cpf = 0
+        saldo = 0
 
-    def excluir(self, num_conta):
-        self.contas.pop(num_conta)
-        print("Conta excluida com sucesso!")
+
+clientes = []
