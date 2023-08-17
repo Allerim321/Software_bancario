@@ -1,8 +1,9 @@
 class Cliente:
 
-    def __init__(self, nome, num_conta):
+    def __init__(self, nome, num_conta,saldo):
         self.nome = nome
         self.num_conta = num_conta
+        self.saldo = saldo
 
 
     def sacar(self, valor):
