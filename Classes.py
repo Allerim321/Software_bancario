@@ -24,8 +24,8 @@ class Cliente:
 
 class Banco:
 
-    def adicionar_conta(self, nome, cpf, idade, saldo, num_conta):
-        conta = nome, cpf, idade, saldo, num_conta
+    def adicionar_conta(self, nome, cpf, idade, num_conta):
+        conta = nome, cpf, idade, num_conta
         self.contas.append(conta)
 
     def excluir(self, num_conta):

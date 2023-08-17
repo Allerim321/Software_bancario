@@ -10,10 +10,10 @@ def def_cadastro():
     x = 1
     while x == 1:
         os.system("cls")
-        Banco.adicionar_conta=(input("Digite o nome do cliente\n-"),
+        Banco.adicionar_conta=(input("digite o nome do cliente\n-"),
         input("Digite o CPF do cliente\n-"),
         input("Digite a idade do cliente\n-"),
-        print(f"O número da conta é", random.randint(1000, 9999)))
+        print ("O número da sua conta é", random.randint(1000, 9999)))
         os.system("pause")
         x = 2
 
