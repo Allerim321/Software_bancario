@@ -78,5 +78,4 @@ def main():
                 case _:
                     print("Essa opção não consta na lista.")
         except Exception as erro:
-            print("Algo deu errado. Tente novamente.")
-            print(erro.__class__.__name__)
+            print("Algo deu errado. Tente novamente.\n")
