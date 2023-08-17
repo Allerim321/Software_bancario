@@ -10,5 +10,5 @@ class Cliente:
         if valor > self.saldo:
             print("Não é possível sacar esse valor")
         else:
-            saldo = self.saldo - valor
-            print("Valor sacado com sucesso! Seu saldo agora é de R$",saldo)
+            self.saldo = self.saldo - valor
+            print("Valor sacado com sucesso! Seu saldo agora é de R$",self.saldo)
