@@ -33,7 +33,7 @@ class Banco:
         self.contas = []
 
     def adicionar_conta(self, nome, num_conta):
-        conta = Cliente(nome, num_conta)
+        conta = nome, num_conta
         self.contas.append(conta)
 
     def excluir(self, num_conta):
