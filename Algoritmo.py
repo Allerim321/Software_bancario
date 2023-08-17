@@ -14,7 +14,7 @@ def def_cadastro():
         banco.setIdade(input("Digite a idade do cliente.\n-"))
         banco.setCpf(input("Digite o CPF do cliente.\n-"))
         banco.setSaldo(input("Digite o saldo do cliente.\n-"))
-        print (banco.getConta)
+        print ("Número da conta:", banco.getConta())
         os.system("pause")
         x = 2
 
