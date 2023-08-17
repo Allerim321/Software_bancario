@@ -18,6 +18,7 @@ class Cliente:
         print("Valor depositado com sucesso! Seu saldo agora é de R$", self.saldo)
 
 
+
 class Banco:
 
     def __init__(self, nome, cnpj):
@@ -27,6 +28,10 @@ class Banco:
     def __init__(self):
         self.contas = []
 
-    def adicionar_conta(self, saldo, cliente):
-        conta = Cliente(saldo, cliente)
+    def adicionar_conta(self, nome, cpf):
+        conta = Cliente(nome, cpf)
         self.contas.append(conta)
+
+    def excluir(self, cpf):
+        self.contas.pop(cpf)
+        print("Conta excluida com sucesso!")
