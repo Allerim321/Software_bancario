@@ -4,7 +4,6 @@ from Classes import *
 
 
 banco = Banco()
-cliente = Cliente()
 
 
 def def_cadastro():
@@ -14,7 +13,7 @@ def def_cadastro():
         Banco.adicionar_conta=(input("Qual é teu nome?\n-"),
         input("Qual é teu CPF?\n-"),
         input("Qual é a tua idade?\n-"),
-        input("Qual é o teu saldo?\n-"),
+        input("Quanto dinheiro deseja adicionar à conta?\n-"),
         print ("O número da sua conta é", random.randint(1000, 9999)))
         os.system("pause")
         x = 2
