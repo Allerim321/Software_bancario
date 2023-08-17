@@ -20,6 +20,10 @@ class Cliente:
 
 class Banco:
 
+    def __init__(self, nome, cnpj):
+        self.nome = nome
+        self.cnpj = cnpj
+
     def __init__(self):
         self.contas = []
 
