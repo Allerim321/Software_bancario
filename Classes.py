@@ -1,12 +1,6 @@
 import random
 class Cliente:
 
-    def __init__(self, nome, num_conta,saldo):
-        self.nome = nome
-        self.num_conta = num_conta
-        self.saldo = saldo
-
-
     def sacar(self, valor):
         if valor > self.saldo:
             print("Não é possível sacar esse valor")
