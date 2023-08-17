@@ -9,12 +9,12 @@ def def_cadastro():
     x = 1
     while x == 1:
         os.system("cls")
-        Banco.adicionar_conta()
-        Banco.setNome(input("Digite o nome do cliente.\n-"))
-        Banco.setIdade(input("Digite a idade do cliente.\n-"))
-        Banco.setCpf(input("Digite o CPF do cliente.\n-"))
-        Banco.setSaldo(input("Digite o saldo do cliente.\n-"))
-        print (Banco.getConta)
+        banco.adicionar_conta()
+        banco.setNome(input("Digite o nome do cliente.\n-"))
+        banco.setIdade(input("Digite a idade do cliente.\n-"))
+        banco.setCpf(input("Digite o CPF do cliente.\n-"))
+        banco.setSaldo(input("Digite o saldo do cliente.\n-"))
+        print (banco.getConta)
         os.system("pause")
         x = 2
 
