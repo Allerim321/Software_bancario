@@ -3,7 +3,7 @@ import random
 from Classes import *
 
 
-banco = Banco("Banco do SENAI", "1234")
+banco = Banco()
 
 
 
@@ -11,7 +11,7 @@ def def_cadastro():
     x = 1
     while x == 1:
         os.system("cls")
-        banco.adicionar_conta(input("Qual é seu nome?\n-"), print ("O número da sua conta é", random.randint(1000, 9999)))
+        Banco.adicionar_conta=(input("Qual é seu nome?\n-"), print ("O número da sua conta é", random.randint(1000, 9999)))
 
         os.system("pause")
         x = 2
@@ -85,5 +85,5 @@ def main():
                     exit()
                 case _:
                     print("Essa opção não consta na lista.")
-        except Exception as erro:
+        except Exception:
             print("Algo deu errado. Tente novamente.\n")
