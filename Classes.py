@@ -27,7 +27,7 @@ class Banco:
         self.saldo = 0
         cliente = self.num_conta, self.nome, self.idade, self.cpf, self.saldo
         clientes.append(cliente)
-
+    
     def getConta(self):
         return self.num_conta
    

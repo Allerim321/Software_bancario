@@ -1,5 +1,4 @@
 import os
-import random
 from Classes import *
 
 
@@ -10,10 +9,12 @@ def def_cadastro():
     x = 1
     while x == 1:
         os.system("cls")
-        Banco.adicionar_conta=(input("digite o nome do cliente\n-"),
-        input("Digite o CPF do cliente\n-"),
-        input("Digite a idade do cliente\n-"),
-        print ("O número da conta é",banco.getConta))
+        Banco.adicionar_conta()
+        Banco.setNome(input("Digite o nome do cliente.\n-"))
+        Banco.setIdade(input("Digite a idade do cliente.\n-"))
+        Banco.setCpf(input("Digite o CPF do cliente.\n-"))
+        Banco.setSaldo(input("Digite o saldo do cliente.\n-"))
+        print (Banco.getConta)
         os.system("pause")
         x = 2
 
@@ -82,8 +83,7 @@ def main():
                     def_transferencia()
                 case 7: 
                     print("Saindo...")
-                    os.system("pause")
-                    exit()
+                
                 case _:
                     print("Essa opção não consta na lista.")
         except Exception:
