@@ -18,18 +18,11 @@ class Cliente:
         print("Valor depositado com sucesso! Seu saldo agora é de R$", self.saldo)
 
 
-class Conta:
-
-    def __init__(self, saldo, cliente):
-        self.saldo = saldo
-        self.cliente = cliente
-
-
 class Banco:
 
     def __init__(self):
         self.contas = []
 
     def adicionar_conta(self, saldo, cliente):
-        conta = Conta(saldo, cliente)
+        conta = Cliente(saldo, cliente)
         self.contas.append(conta)
