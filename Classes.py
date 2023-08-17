@@ -6,11 +6,11 @@ class Cliente:
             print("Não é possível sacar esse valor")
         else:
             self.saldo -= valor
-            print("Valor sacado com sucesso! Seu saldo agora é de R$", self.saldo)
+            print("Valor sacado com sucesso! O saldo agora é de R$", self.saldo)
 
     def depositar(self, valor):
         self.saldo += valor
-        print("Valor depositado com sucesso! Seu saldo agora é de R$", self.saldo)
+        print("Valor depositado com sucesso! O saldo agora é de R$", self.saldo)
 
     def transferencia(self, num_conta1, num_conta2, valor):
         num_conta1.saldo=self.saldo - valor
