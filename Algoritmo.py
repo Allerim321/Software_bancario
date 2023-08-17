@@ -1,4 +1,5 @@
 import os
+from Classes import *
 
 def def_cadastro():
     x = 1
@@ -39,6 +40,7 @@ def def_transferencia():
     x = 1
     while x == 1:
         os.system("cls")
+
         os.system("pause")
         x = 2
 
