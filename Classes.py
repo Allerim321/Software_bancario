@@ -25,8 +25,8 @@ class Banco:
         self.idade = 0
         self.cpf = 0
         self.saldo = 0
-        cliente = self.num_conta, self.nome, self.idade, self.cpf, self.saldo
-        clientes.append(cliente)
+        conta = {'conta': self.num_conta, 'nome': self.nome, 'idade': self.idade, 'cpf': self.cpf, 'saldo' : self.saldo}
+        clientes.append(conta)
     
     def getConta(self):
         return self.num_conta
