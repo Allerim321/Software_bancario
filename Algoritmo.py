@@ -1,10 +1,18 @@
 import os
+import random
 from Classes import *
+
+
+banco = Banco("Banco do SENAI", "1234")
+
+
 
 def def_cadastro():
     x = 1
     while x == 1:
         os.system("cls")
+        banco.adicionar_conta(input("Qual é seu nome?\n-"), print ("O número da sua conta é", random.randint(1000, 9999)))
+
         os.system("pause")
         x = 2
 
