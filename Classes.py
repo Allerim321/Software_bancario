@@ -24,13 +24,6 @@ class Cliente:
 
 class Banco:
 
-    def __init__(self, nome, cnpj):
-        self.nome = nome
-        self.cnpj = cnpj
-
-    def __init__(self):
-        self.contas = []
-
     def adicionar_conta(self, nome, cpf, idade, saldo, num_conta):
         conta = nome, cpf, idade, saldo, num_conta
         self.contas.append(conta)
