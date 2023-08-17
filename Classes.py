@@ -55,7 +55,7 @@ class Banco:
     def setSaldo(self,x):
         self.saldo = x
 
-    def excluir(self, x):
-        clientes.pop(x)
+    def excluir(self, num_conta):
+        del num_conta
 
 clientes = []

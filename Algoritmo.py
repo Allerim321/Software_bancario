@@ -14,7 +14,7 @@ def def_cadastro():
         banco.setIdade(input("Digite a idade do cliente.\n-"))
         banco.setCpf(input("Digite o CPF do cliente.\n-"))
         banco.setSaldo(input("Digite o saldo do cliente.\n-"))
-        print ("Número da conta:", banco.getConta())
+        print("Número da conta:", banco.getConta())
         os.system("pause")
         x = 2
 
@@ -22,8 +22,7 @@ def def_excluir():
     x = 1
     while x == 1:
         os.system("cls")
-        banco.excluir(x)
-        input("Digite o número da conta a ser excluído.\n")
+        banco.excluir(input("Digite o número da conta a ser excluído.\n"))
         print ("Excluído. Lista:\n", clientes)
         os.system("pause")
         x = 2
