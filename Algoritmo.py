@@ -10,7 +10,8 @@ def main():
             print("[3] - Alterar cliente")
             print("[4] - Realizar saque")
             print("[5] - Realizar depósito")
-            print("[6] - Sair")
+            print("[6] - Realizar transferência")
+            print("[7] - Sair")
 
             op = int(input("Digite o número equivalente à opção que deseja:\n"))
             match op:
@@ -24,7 +25,9 @@ def main():
                     print("")
                 case 5:
                     print("")
-                case 6: 
+                case 6:
+                    print("")
+                case 7: 
                     print("Saindo...")
                     os.system("pause")
                     exit()
