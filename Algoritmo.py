@@ -13,7 +13,7 @@ def def_cadastro():
         Banco.adicionar_conta=(input("digite o nome do cliente\n-"),
         input("Digite o CPF do cliente\n-"),
         input("Digite a idade do cliente\n-"),
-        print ("O número da conta é",))
+        print ("O número da conta é",banco.getConta))
         os.system("pause")
         x = 2
 
