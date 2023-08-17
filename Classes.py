@@ -1,11 +1,9 @@
 class Cliente:
 
-    def __init__(self, nome, cpf, num_conta, idade, saldo):
+    def __init__(self, nome, num_conta):
         self.nome = nome
-        self.cpf = cpf
         self.num_conta = num_conta
-        self.idade = idade
-        self.saldo = saldo
+
 
     def sacar(self, valor):
         if valor > self.saldo:
@@ -32,8 +30,8 @@ class Banco:
     def __init__(self):
         self.contas = []
 
-    def adicionar_conta(self, nome, num_conta):
-        conta = nome, num_conta
+    def adicionar_conta(self, nome, cpf, idade, saldo, num_conta):
+        conta = nome, cpf, idade, saldo, num_conta
         self.contas.append(conta)
 
     def excluir(self, num_conta):
